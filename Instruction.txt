@@ -1,0 +1,21 @@
+--------------**To Run The Application**----------------
+Step:1 Download the project
+Step2: Install any server(eg:Wamp/Xampp)
+Step3: Copy the whole project in the folder www in case of wamp server or in htdocs folder in Xampp server
+Step4: Run the server
+Step5: Type the url in the browser(eg:localhost/Innoseva)
+
+
+---------***For Default:***------------
+
+	First Name: 	Sujan
+	Last Name: 	Prajapati
+	Phone Number: 	9808580444
+	Address: 	Pyaphal
+
+---------**For New Entry**-------------
+
+Step1: Open data.csv file located in the folder Innoseva
+Step2: Fill up First Name, Last Name, Phone Number, Address in the order.
+Step3: Save the file.
+Step4: Enter the same data in the browser.

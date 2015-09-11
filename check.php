@@ -1,0 +1,37 @@
+<?php
+    $file=fopen("data.csv","r");
+        $arr=array();
+        while(!feof($file))
+        {
+            array_push($arr,fgetcsv($file));
+        }
+    fclose($file);
+    $first_name=$_POST['f_name'];
+    $last_name=$_POST['l_name'];
+    $phone_no=$_POST['p_no'];
+    $address=$_POST['address'];
+    $user=array($first_name,$last_name,$phone_no,$address);
+    $flag=false;
+    foreach($arr as $arrs){
+        for($i=0;$i<4;$i++)
+        {
+            if($arrs[$i]==$user[$i])
+            {
+                $flag=true;
+            }
+            else
+            {
+                $flag=false;
+                break;
+            }
+        }
+        if($flag){
+            header('location:Welcome.php');
+            break;
+        }
+    }
+    if(!$flag){
+        header('location:Sorry.php');
+
+    }
+?>
